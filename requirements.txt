@@ -1,10 +1,11 @@
+streamlit
+protobuf==3.20.*
 tensorflow
 torch
 transformers
-tokenizers
-streamlit
-nidecode
+unidecode
 nltk
 numpy
 pandas
-PIL
+Pillow
+gensim
