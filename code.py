@@ -41,7 +41,7 @@ st.image(image, caption='Estudiante: Alejandro Núñez Arroyo | Tutor: Ing. Guil
 #     ('Dirigentes del transporte cruceño alentaron a salir con palos a desbloquear | Falso', 
 #      'UTO producirá dióxido de cloro y su Rector denuncia que los insumos ya subieron | Verdadero'))
 
-user_input = st.text_area('Ingresar texto para revisión', value="Escribe aquí el extracto a verificar o prueba un ejemplo...", key=1)
+user_input = st.text_area('Ingresar texto para revisión', value="Escribe aquí el extracto a verificar o prueba un ejemplo...")
 pre_pro = st.radio(
     "Seleccione el filtrado:",
     ('Con preprocesamiento', 'Sin preprocesamiento'))
@@ -49,7 +49,7 @@ button = st.button("Analizar")
 
 st.sidebar.title("Información adicional")
 st.sidebar.info('Descarga la guía de usuario:')
-link='[ENLACE](https://github.com/AlejandroNunezArroyo/test_web_/blob/main/file/Protocolo.pdf)'
+link='[ENLACE](https://drive.google.com/file/d/1w9TGTw9M84tGVl1a9czR7WQKopJ26SGr/view?usp=sharing)'
 st.sidebar.markdown(link,unsafe_allow_html=True)
 st.sidebar.header('Ejemplos falso: ')
 st.sidebar.markdown('Vacunas genéticas provocan daño al ser humano')
