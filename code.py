@@ -5,6 +5,7 @@ import streamlit as st
 import torch.nn.functional as F
 import unidecode
 import nltk
+nltk.download('stopwords')
 import gensim
 import pandas as pd
 from nltk.corpus import stopwords
