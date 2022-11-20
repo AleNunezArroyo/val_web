@@ -16,15 +16,16 @@ current_directory = Path(__file__).parent #Get current directory
 
 @st.cache(allow_output_mutation=True)
 def get_model():
-    tokenizer = BertTokenizerFast.from_pretrained('/home/ale/Documents/model/bert-base-spanish-wwm-uncased')
-    model = BertForSequenceClassification.from_pretrained("/home/ale/Downloads/CustomModel")
+    tokenizer = BertTokenizerFast.from_pretrained('dccuchile/bert-base-spanish-wwm-uncased')
+    model = BertForSequenceClassification.from_pretrained("AleNunezArroyo/BETO_BolivianFN")
     return tokenizer,model
 
 @st.cache(allow_output_mutation=True)
 def get_extra():
     nltk.download("stopwords")
     stop_words = stopwords.words('spanish')
-    image = Image.open('file/image.jpg')
+    image = open(os.path.join(current_directory, 'file/image.jpg'), 'rb')
+    image = Image.open(image)
     return stop_words, image
 
 
